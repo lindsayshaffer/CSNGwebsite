@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<img src="images/emily_2.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
+
+The **Computational Social Neuroscience Group** is a part of the Department of Psychology at George Mason University.
+The CSNG examines two vital components of human cognition: social perception; and how we understand our physical world through the representation of time and space – roughly categorized, people and time/space. My goal is to uncover the neural mechanisms that underlie our understanding of our social and physical worlds using the tools of social and cognitive neuroscience, including functional magnetic resonance imaging (fMRI), source-localized electroencephalography (EEG), and more recently, repetitive transcranial magnetic stimulation (rTMS).
