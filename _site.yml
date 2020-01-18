@@ -1,0 +1,8 @@
+name: "CSNG-website"
+navbar:
+  title: "The Computational Social Neuroscience Group"
+  left:
+    - text: "Home"
+    href: index.html
+    - text: "About"
+    href: about.html
