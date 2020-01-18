@@ -4,5 +4,18 @@ navbar:
   left:
     - text: "Home"
     href: index.html
-    - text: "About"
-    href: about.html
+    - text: "News"
+    href: news.html
+    - text: "People"
+    href: people.html
+    - text: "Projects"
+    href: projects.html
+    - text: "Publications"
+    href: publications.html
+    - text: "Volunteer"
+    href: volunteer.html
+output: 
+  html_document:
+  theme: paper
+  css: 'styles.css'
+    
