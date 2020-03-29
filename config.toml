@@ -1,200 +1,221 @@
-################################# Default configuration ###################
-baseURL = "https://gallant-snyder-972297.netlify.com/"
-title = "Airspace | Creative Agency Hugo Template"
-theme = "airspace-hugo-master"
-# post pagination
-paginate = "4"
-# post excerpt
-summaryLength = "30"
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
-# default content language
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
-# disable language
-disableLanguages = []
+# Site settings
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Forty"
+theme = "forty"
 
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
 
-############################# Plugins ##############################
-[params.plugins]
+# Enter your disqus shortname to enable comments
+disqusShortname = ""
 
-  # CSS Plugins
-  [[params.plugins.css]]
-  link = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  link = "plugins/Ionicons/css/ionicons.min.css"
-  [[params.plugins.css]]
-  link = "plugins/magnific-popup/magnific-popup.css"
-  [[params.plugins.css]]
-  link = "plugins/slick/slick.css"
-
-  # JS Plugins
-  [[params.plugins.js]]
-  link = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  link = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  link = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
-  [[params.plugins.js]]
-  link = "plugins/shuffle/shuffle.min.js"
-  [[params.plugins.js]]
-  link = "plugins/google-map/gmap.js"
-
-  
-############################## navigation ###############################
-[menu]
-  
-  # main menu
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 1
-  
-  [[menu.main]]
-  name = "Project"
-  URL = "project"
-  weight = 2
-  
-  [[menu.main]]
-  name = "Service"
-  URL = "service"
-  weight = 3
-  
-  [[menu.main]]
-  name = "Blog"
-  URL = "blog"
-  weight = 4
-
-  [[menu.main]]
-  weight = 5
-  name = "Pages"
-  hasChildren = true
-
-    [[menu.main]]
-    parent = "Pages"
-    name = "FAQ"
-    URL = "faq"
-
-    [[menu.main]]
-    parent = "Pages"
-    name = "Pricing"
-    URL = "pricing"
-    
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 6
-
-  
-  # footer menu
-  [[menu.footer]]
-  name = "About"
-  URL = "about"
-  weight = 1
-  
-  [[menu.footer]]
-  name = "Project"
-  URL = "project"
-  weight = 2
-  
-  [[menu.footer]]
-  name = "Service"
-  URL = "service"
-  weight = 3
-  
-  [[menu.footer]]
-  name = "Pricing"
-  URL = "pricing"
-  weight = 4
-  
-  [[menu.footer]]
-  name = "FAQ"
-  URL = "faq"
-  weight = 5
-  
-  [[menu.footer]]
-  name = "Contact"
-  URL = "contact"
-  weight = 6
-
-
-#################### default parameters ################################
 [params]
-logo = "images/logo.png"
-home = "Home"
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
-# Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
-# contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
-# Google Analitycs
-google_analitycs_id = "Your ID"
+  # You can use Markdown syntax for urls [text](//url.to/source)
+  # To create multi-line text in strings use the """example Text""" format
+  #
+  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
 
-  # Preloader
-  [params.preloader]
-  enable = true
-  preloader = "" # use .png , .svg or .gif format
+  # Provide your metadata here.
+  name = "Your name"
+  description = "Your description"
 
-  # search
-  [params.search]
-  enable = true
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
 
-  # Navigation get start button
-  [params.nav_button]
-  enable = true
-  label = "Get A Quote"
-  link = "contact"
+  # Just a custom image variable, please define it in .md files for content.
+  image = ""
 
-  # google map
-  [params.gmap]
-  enable = true
-  gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-  map_latitude = "51.5223477"
-  map_longitude = "-0.1622023"
-  map_marker = "images/marker.png"
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
 
-  
-############################# social site ########################
-[[params.social]]
-icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+  # Navigation Section
+  [params.navigation]
+    title = "Forty"
+    subtitle = "By HTML5 Up"
+    menu = "Menu"
+    # Optional logo as brand stored in img/
+    # logo = "logo.png"
 
-[[params.social]]
-icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+    [[params.navigation.links]]
+      name = "Home"
+      url = "#"
 
-[[params.social]]
-icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+    [[params.navigation.links]]
+      name = "Blogs"
+      url = "blogs"
 
-[[params.social]]
-icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+    [[params.navigation.links]]
+      name = "Generic Blog"
+      url = "blogs/ipsum"
 
-[[params.social]]
-icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+    [[params.navigation.links]]
+      name = "Elements"
+      url = "elements.html"
 
-[[params.social]]
-icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+    # Add custom links here by uncommenting code below. To remove links just delete
+    # the [[params.navigation.links]] map associated with that link. Copy and paste
+    # code below if you need more links. Buttons work in the same way.
+    # [[params.navigation.links]]
+    #    name = "NameOfLink"
+    #    url = "UrlOfLink"
+
+    # Button Style 1
+    [[params.navigation.button1]]
+      name = "Get Started"
+      url = "blogs"
+
+    # Button Style 2
+    [[params.navigation.button2]]
+      name = "Log In"
+      url = "#"
 
 
-################################# language ################################
-[Languages]
+  # Banner section
+  [params.banner]
+    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # the 'static/img' folder.
+    title = "Hi, my name is Forty"
+    subtitle = "A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP\nAND RELEASED UNDER THE CREATIVE COMMONS."
+    buttonText = "Get Started"
 
-  ################################ English Language ########################
-  [Languages.en]
-  languageName = "En"
-  languageCode = "en-us"
-  contentDir = "content/english"
-  weight = 1
-  home = "Home"
-  # copyright
-  copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+  # Tiles Section
+  [params.tiles]
+    enable = true
+    # Display your showcases here.
+    
+    [[params.tiles.showcase]]
+      title = "Aliquam"
+      subtitle = "Ipsum Dolor Sit Amet"
+      image = "pic01.jpg"
+      url = "blogs/aliquam"
+
+    [[params.tiles.showcase]]
+      title = "Tempus"
+      subtitle = "Feugiat Amet Tempus"
+      image = "pic02.jpg"
+      url = "blogs/tempus"
+
+    [[params.tiles.showcase]]
+      title = "Magna"
+      subtitle = "Lorem Etiam Nullam"
+      image = "pic03.jpg"
+      url = "blogs/magna"
+
+    [[params.tiles.showcase]]
+      title = "Ipsum"
+      subtitle = "Nisl Sed Aliquam"
+      image = "pic04.jpg"
+      url = "blogs/ipsum"
+
+    [[params.tiles.showcase]]
+      title = "Consequat"
+      subtitle = "Ipsum Dolor Sit Amet"
+      image = "pic05.jpg"
+      url = "blogs/ipsum"
+
+    [[params.tiles.showcase]]
+      title = "Etiam"
+      subtitle = "Feugiat Amet Tempus"
+      image = "pic06.jpg"
+      url = "blogs/ipsum"
+    # You can make more showcases by copy and pasting the code above
+
+  [params.blog]
+    # All blogs defined in their own files. You can find example blogs
+    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    # To add more blogs just copy and paste the code.
+
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "Massa libero"
+    subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
+    Mauris aliquet magna magna sed nunc rhoncus pharetra. 
+    Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. 
+    Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
+    Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus."""
+    buttonText = "Get Started"
+    url = "blogs"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    buttonSend = "Send message"
+    buttonClear = "Clear"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below and uncomment
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    # formEmail = "example@domain.com"
+
+    # Contact Section
+    # You can add multiple emails, phone numbers, or addresses
+    # by copying the corresponding map with frontmatter code.
+    [[params.contact.email]]
+    title = "Email"
+    email = "example@domain.com"
+
+    [[params.contact.phone]]
+    title = "Phone"
+    phone = "(000) 000-0000 x1234"
+
+    [[params.contact.address]]
+    title = "Address"
+    street = "Street"
+    city = "City, ST 00000"
+    country = "Country"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Company Name"
+
+    # Uses font awesome icons
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      url= "https://www.twitter.com"
+      label = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      url= "https://www.facebook.com"
+      label = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-instagram"
+      url= "https://www.instagram.com"
+      label = "Instagram"
+    
+    [[params.footer.social]]
+      icon = "fa-github"
+      url= "https://www.github.com"
+      label = "GitHub"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      url= "https://www.linkedin.com"
+      label = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "Design: "
+      url= "https://www.html5up.net"
+      alt = "HTML5 UP"
